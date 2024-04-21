@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1>Index Page</h1>
+
+<ul>
+    <li><a href="{% url 'articles:articles' %}">목록으로 이동</a></li>
+    <li><a href="{% url 'articles:data_throw' %}">Throw로 이동</a></li>
+    <li><a href="{% url 'users:users' %}">Users로 이동</a></li>
+</ul>
+
+{% endblock content %}
